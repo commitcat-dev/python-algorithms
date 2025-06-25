@@ -20,11 +20,11 @@ def solution(nodeinfo):
     for index, (x, y) in enumerate(nodeinfo):
         node_list.append(Node(x=x, y=y, value=index + 1))
 
-        # Y축 기준으로 순서 정렬, 동일할 경우 X축 기준으로 왼쪽 우선
-        def sorting(node):
-            return (-node.y, node.x)
+    # Y축 기준으로 순서 정렬, 동일할 경우 X축 기준ㅍ로 왼쪽 우선
+    def sorting(node):
+        return (-node.y, node.x)
 
-        node_list.sort(key=sorting)
+    node_list.sort(key=sorting)
 
     # 노드 순서 확인
     # for node in node_list:

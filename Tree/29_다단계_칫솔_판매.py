@@ -44,7 +44,7 @@ def solution_시간초과(enroll, referral, seller, amount):
         # print(user, income)
         user_tree = dict[user]
         node = user_tree
-        while node != center:
+        while node != center and income > 0:
             tax = income // 10
             _income = income - tax
             # print(tax, _income)
